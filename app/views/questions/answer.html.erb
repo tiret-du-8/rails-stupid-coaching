@@ -1,0 +1,31 @@
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container py-5 h-50">
+    <div>
+      <div class="mb-4 mb-lg-0">
+        <figure class="bg-white p-3 rounded" style="border-left: .25rem solid #E3B23D;">
+          <blockquote class="blockquote pb-2">
+            <p>
+              <%= @input %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            You
+          </figcaption>
+        </figure>
+      </div>
+      <div class="mb-4 mb-lg-0">
+        <figure class="bg-white p-3 rounded" style="border-left: .25rem solid #B75D69;">
+          <blockquote class="blockquote pb-2">
+            <p>
+              <%= @answer %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            The coach
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <%= link_to "→ Ask another question", ask_path %>
+  </div>
+</section>
